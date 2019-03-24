@@ -1,0 +1,240 @@
+/* TYPOGRAPHY */
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+}
+h1, h2, h3 {
+  font-family: $heading-font-family;
+}
+h1 {
+	font-weight: 400;
+	margin: 40px 0px 20px;
+	font-size: 48px;
+	color: $dark-gray;
+}
+h2 {
+	font-weight: 400;
+	margin: 50px 0px 20px;
+	font-size: 32px;
+	color: $dark-gray;
+
+    &.marginless {
+        margin: 20px 0px;
+    }
+}
+h3 {
+	font-weight: 400;
+	margin: 60px 0px 20px;
+	font-size: 28px;
+	color: $dark-gray;
+
+    &.marginless {
+        margin: 20px 0px;
+    }
+}
+h4 {
+    font-weight: 500;
+    margin: 70px 0px 20px;
+    font-size: 24px;
+    color: $dark-gray;
+
+    &.marginless {
+        margin: 20px 0px;
+    }
+}
+h5 {
+    font-weight: 600;
+    margin: 78px 0px 20px;
+    font-size: 20px;
+    color: $dark-gray;
+
+    &.marginless {
+        margin: 20px 0px;
+    }
+}
+h6 {
+    font-weight: 700;
+    margin: 86px 0px 20px;
+    font-size: 16px;
+    color: $dark-gray;
+
+    &.marginless {
+        margin: 20px 0px;
+    }
+}
+.home {
+	h1 {
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 60px;
+		color: $white;
+		width: 100%;
+		max-width: 600px;
+		line-height: 60px;
+	}
+	h2 {
+		margin: -30px 0px 30px -30px;
+	}
+	h3 {
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 22px;
+		color: $white;
+		position: absolute;
+		bottom: 0px;
+		left: 20px;
+		padding-right: 30px;
+	}
+}
+.hero {
+	h2 {
+		margin: -30px 0px -10px -50px;
+	}
+}
+p {
+	line-height: 24px;
+}
+blockquote {
+	font-size: 23px;
+	font-weight: 300;
+	line-height: 35px;
+	padding: 30px;
+	background-color: #ffe3b2;
+	background-image:url(../img/quotes.png);
+	background-repeat: no-repeat;
+	background-position: 15px 0px;
+	border-left: 15px solid #f1961f;
+	width: 50%;
+	float: right;
+	margin: 0px 0px 20px 20px;
+
+    &.wide {
+        width: 90%;
+        margin: auto;
+        float: none;
+    }
+}
+.textbox--turquoise {
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 20px;
+    color: $white;
+    background-color: $turquoise;
+    width: 50%;
+    float: right;
+    margin: 0px 0px 20px 20px;
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.textbox--blue {
+    font-weight: 400;
+	padding: 20px;
+	border-radius: 20px;
+	color: $white;
+	background-color: $blue;
+	width: 50%;
+	float: right;
+	margin: 0px 0px 20px 20px;
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.textbox__wide--turquoise {
+    font-weight: 400;
+	padding: 20px;
+	border-radius: 20px;
+	color: $white;
+	background-color: $turquoise;
+    width: 90%;
+    margin: auto;
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.textbox__wide--blue {
+    font-weight: 400;
+	padding: 20px;
+	border-radius: 20px;
+	color: $white;
+	background-color: $blue;
+    width: 90%;
+    margin: auto;
+
+    a {
+        color: lightgray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 955px) {
+	.home {
+		h1 {
+			color: $dark-gray;
+			font-size: 32px;
+			line-height: 32px;
+			margin-bottom: 0px;
+			margin: 40px 0px 20px;
+		}
+	}
+	.hero h2 {
+		margin: -19px 0px -10px 0px;
+	}
+	h1 {
+		font-size: 38px;
+		line-height: 38px;
+		margin: 10px 0px 20px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.home {
+		.our-mission {
+			h2 {
+				margin: -30px 0px 20px -30px;
+			}
+		}
+	}
+	blockquote {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 27px;
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 600px) {
+	blockquote {
+		width: 100%;
+		float: none;
+		margin: 0px 0px 20px;
+	}
+}
+@media screen and (max-width: 400px) {
+	.home {
+		h3 {
+			font-size: 18px;
+		}
+	}
+}

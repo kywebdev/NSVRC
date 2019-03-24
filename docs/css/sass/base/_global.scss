@@ -1,0 +1,186 @@
+/*
+ * Set all elements to border-box sizing.
+ * This may be overkill and can be overwrote if needed but generally I recommend doing this to prevent frustration down the line.
+ */
+* {
+  @include box-sizing(border-box);
+}
+
+html, body {
+  height: 100%;
+}
+.style-guide {
+	margin-top: 100px;
+}
+.container {
+	width: 90%;
+	max-width: 1140px;
+	margin: 0px auto 70px;
+}
+.main-content {
+	width: 71%;
+	float: left;
+
+    &.full-width {
+        width: 100%;
+        float: none;
+    }
+	ul, ol {
+		li {
+			margin-bottom: 10px;
+		}
+	}
+	img {
+		max-width: 100%;
+        height: auto;
+	}
+}
+.video-container {
+	@include aspect-ratio(16, 9);
+
+	iframe, video {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+}
+b, strong {
+	font-weight: 600;
+}
+hr {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+table {
+    border: 1px solid #ededed;
+    width: 100%;
+    border-spacing: 0px;
+    margin-bottom: 30px;
+
+    tr {
+        &:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        td {
+            padding: 10px;
+        }
+    }
+    &.hover-highlight {
+        tr {
+            &:hover {
+                background-color: #eeeeee;
+            }
+        }
+    }
+}
+.list-links {
+    margin-left: -40px;
+
+    li {
+        list-style-type: none;
+        border-top: 1px solid #d9d9d9;
+        margin-bottom: 0px !important;
+
+        &:last-of-type {
+            border-bottom: 1px solid #d9d9d9;
+        }
+        a {
+            padding: 10px;
+            display: block;
+            transition: all .1s linear;
+
+            &:hover {
+                background-color: #f8f8f8;
+                text-decoration: none;
+            }
+        }
+    }
+    &.striped {
+        li {
+            &:nth-child(even) {
+                a {
+                    background-color: #f8f8f8;
+                }
+            }
+            a {
+                &:hover {
+                    background-color: #eeeeee;
+                }
+            }
+        }
+    }
+}
+.info-list {
+    margin-left: -40px;
+
+    li {
+        list-style-type: none;
+        border-top: 1px solid #d9d9d9;
+        margin-bottom: 0px !important;
+        padding: 10px 15px;
+        transition: all .1s linear;
+
+        &:last-of-type {
+            border-bottom: 1px solid #d9d9d9;
+        }
+        &:hover {
+            background-color: #f8f8f8;
+        }
+        p {
+            margin: 0px;
+        }
+    }
+    &.striped {
+        li {
+            &:nth-child(even) {
+                background-color: #f8f8f8;
+            }
+            &:hover {
+                background-color: #eeeeee;
+            }
+        }
+    }
+}
+::-webkit-input-placeholder {
+  color: #7f7f7f;
+}
+::-moz-placeholder {
+  color: #7f7f7f;
+}
+:-ms-input-placeholder {
+  color: #7f7f7f;
+}
+:-moz-placeholder {
+  color: #7f7f7f;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+	.container {
+		margin: 0px auto 30px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.responsive-img {
+		margin: 0px 0px 20px !important;
+	}
+}
+@media screen and (max-width: 400px) {
+    table {
+        tr {
+            td {
+                display: block;
+                padding: 5px 10px;
+
+                &:first-of-type {
+                    padding-top: 10px;
+                }
+                &:last-of-type {
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}

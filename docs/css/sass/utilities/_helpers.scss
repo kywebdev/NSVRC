@@ -1,0 +1,64 @@
+// Clearfix
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+// Visually hide; available to screen readers
+%visuallyhidden {
+	border: 0; clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+// Alignment
+.align-left {
+	text-align: left !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.left {
+	float: left !important;
+}
+.right {
+	float: right !important;
+}
+.center {
+	margin: 0px auto !important;
+}
+.center-btn {
+	text-align: center;
+}
+
+.active {
+	font-weight: 600;
+	color: $dark-gray;
+	pointer-events: none;
+	cursor: default;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+.img-left {
+    float: left;
+    margin: 0px 30px 20px 0px;
+}
+.img-right {
+    float: right;
+    margin: 0px 0px 20px 30px;
+}

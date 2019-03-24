@@ -1,0 +1,144 @@
+/* ARTICLES */
+.articles-horizontal {	
+	.article {
+		width: 30.6%;
+		margin-right: 4%;
+		float: left;
+		
+		&:last-child {
+			margin-right: 0%;
+		}
+		img {
+			width: 100%;
+		}
+		a {
+			display: block;
+		}
+		.article-heading {
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+		.article-snippet {
+			margin-bottom: 15px;
+		}
+		.article-link {
+			
+			a {
+				&:hover {
+					text-decoration: none;
+					
+					.fa-angle-right {
+						left: 3px;
+					}
+				}
+				.fa-angle-right {
+					margin-left: 12px;
+					transition: all .1s ease-in-out;
+					position: relative;
+					left: 0px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+.articles-vertical {
+	margin-top: 30px;
+		
+	.article {
+		border-top: 1px solid #d9d9d9;
+		
+		.left {
+			float: left;
+			width: 22%;
+			margin-right: 4%;
+			margin-top: 25px;
+			margin-bottom: 20px;
+		}
+		.right {
+			float: left;
+			width: 74%;
+			margin-bottom: 5px;
+		}
+		img {
+			width: 100%;
+		}
+		a {
+			display: block;
+		}
+		.article-heading {
+			font-size: 26px;
+			margin-bottom: 15px;
+			line-height: 28px;
+		}
+		.article-snippet {
+			margin-bottom: 15px;
+		}
+		.article-link {
+			a {
+				&:hover {
+					text-decoration: none;
+					
+					.fa-angle-right {
+						left: 3px;
+					}
+				}
+				.fa-angle-right {
+					margin-left: 12px;
+					transition: all .1s ease-in-out;
+					position: relative;
+					left: 0px;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
+	.articles-horizontal {
+		.article {
+			width: 100%;
+			margin-right: 0%;
+			margin-bottom: 20px;
+			
+			img {
+				max-width: 400px;
+			}
+		}
+	}
+	.articles-vertical {
+		.article {
+			.left {
+				margin-bottom: 5px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 530px) {
+	.title-container {
+		content: " ";
+    	display: table;
+	}
+	.articles-vertical {
+		.article {
+			.article-snippet {
+				margin-top: -5px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.articles-horizontal {
+		.article {
+			width: 100%;
+			margin-right: 0%;
+		}
+	}
+	.articles-vertical {
+		.article {
+			
+		}
+	}
+}

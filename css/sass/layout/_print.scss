@@ -1,0 +1,101 @@
+/* PRINT STYLES */
+@media print {
+    header.desktop .social-nav,
+    header.desktop .main-nav-wrapper .nav-wrapper,
+    footer,
+    .hero-btn,
+    .special-project .callout:after,
+    .blog .callout:after,
+    .information-for .callout:after,
+    .sidebar,
+    .breadcrumbs,
+    .video-container,
+    iframe,
+    .comments {
+        display: none;
+    }
+    header.desktop .main-nav-wrapper {
+        margin: 0px auto;
+    }
+    .home h1,
+    .hero-text p,
+    .home h3,
+    .blog .callout .callout-info p,
+    .blog .callout .callout-info .date {
+        color: black;
+    }
+    .home h3,
+    .blog .callout .callout-info,
+    .special-project .callout h2,
+    .blog .callout h2,
+    .special-project,
+    .blog,
+    .hero-text {
+        position: relative;
+        width: 100%;
+        left: 0px;
+        bottom: 0px;
+    }
+    .our-mission {
+        padding: 0px;
+    }
+    .our-mission p {
+        width: 100%;
+        font-size: 24px;
+    }
+    .hero h2, .home h2 {
+        margin: 0px !important;
+    }
+    .home h1 {
+        max-width: none;
+        font-size: 40px;
+        margin-top: 20px;
+    }
+    .hero-caption p,
+    .main-content {
+        width: 100%;
+    }
+    .hero {
+        top: 0px;
+        margin-top: 20px;
+    }
+    .special-project .callout img,
+    .blog .callout img {
+        max-width: 300px;
+    }
+    .blog .callout .callout-info {
+        top: 20px;
+    }
+    .special-project .callout h3 {
+        bottom: 0px;
+        margin-top: 20px;
+    }
+    .information-for {
+        padding: 0px;
+        
+        h3 {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .callout {
+            margin-top: 20px;
+        }
+    }
+    .hero-caption p {
+        margin-bottom: 40px;
+    }
+    .event {
+        border: 1px solid black;
+    }
+    .main-content img {
+        max-width: 300px;
+    }
+    .blog-posts-article .blog-article-links .social li {
+        border: 1px solid $blue;
+        border-radius: 2px;
+        
+        a {
+            color: $blue;
+        }
+    }
+}
